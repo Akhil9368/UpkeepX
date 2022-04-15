@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    justify-content:center;
+    align-items: center;
+    /* min-height: 50vh; */
+    background-color: #03a9f4;
+    transition: 0.5;
+}
+body.active{
+    background: #f43648;
+}
+.container{
+    display: block;
+    position:relative;
+    width:730px;
+    height:500px;
+    margin: 20px;
+    top: 30px;
+    transform: translateX(46%);
+}
+
+.bluebg{
+    position: absolute;
+    top: 40px;
+    display: flex;
+   
+    align-items: center;
+    width: 98%;
+    height: 423px;
+    background: rgba(255,255,255,0.2);
+    box-shadow: 0 5px 45px rgba(0,0,0,0.25);
+}
+.bluebg .box{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bluebg .box h3{
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+.bluebg .box button{
+    cursor: pointer;
+    padding: 10px 20px;
+    background: white;
+    color: #333;
+    font-size:16px;
+    font-weight:500;
+    border: none;
+
+}
+.formbx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background:#fff;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 45px rgba(0,0,0,0.25);
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+}
+.formbx.active{
+    left:50%;
+}
+.formbx .form{
+    position: relative;
+    left:37%;
+    width: 100%;
+    padding: 50px;
+    transition: 0.5s;
+    border-bottom: 14px;
+    transition-delay: 0.25s;
+    
+}
+.formbx .form form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+
+}
+.formbx .form form h3{
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom:20px;
+    font-weight: 500;
+}
+
+.formbx .form form input{
+    width: 220px;
+    border: 1px solid #333;
+    margin-bottom: 15px;
+    height: 34px;
+}
+.formbx.active .form1 input[type="Submit"]{
+    background-color: #f43648;
+    cursor: pointer;
+    border: none;
+    max-width:75px;
+    height: 33px;
+    color: white;
+}
+.formbx .form input[type="Submit"]{
+    background-color: #13b4ff;
+    cursor: pointer;
+    border: none;
+    max-width:75px;
+    height: 33px;
+    color: white;
+}
+.formbx.active .form{
+    left: -100%;
+    transition-delay: 0s;
+}
+.form1 h3{
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom:20px;
+    font-weight: 500;
+}
+.formbx .form1{
+    position: relative;
+    left:-56%;
+    width: 100%;
+    padding: 50px;
+    transition: 0.5s;
+    border-bottom: 14px;
+    transition-delay: 0.25s;
+    
+}
+.formbx .form1 form input{
+    height: 34px;
+    border: 1px solid #333;
+    margin-bottom: 15px;
+    width: 250px;
+}
+.formbx .form1{
+    left: 100%;
+}
+.formbx.active .form1{
+    left: -50%;
+}
+@media (max-width:767px) {
+    .container{
+    position: relative;
+    height:500px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formbx.active{
+    left: 0;
+}
+
+.bluebg{
+    
+        position: absolute;
+        top: -90px;
+        display: flex;
+       
+        align-items: center;
+        width: 100%;
+        height: 670px;
+        background: rgba(255,255,255,0.2);
+        box-shadow: 0 5px 45px rgba(0,0,0,0.25);
+    
+
+}
+
+.formbx{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 88%;
+    margin-right: 10px;
+    margin-right: 10px;
+    background:#fff;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 45px rgba(0,0,0,0.25);
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.bluebg .signup{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 50px;
+}
+.bluebg .signin{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 25px;
+}
+
+}
+@media (max-width:1024px) and (min-width:768px) {
+
+      .container{
+    position: relative;
+    height:500px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formbx.active{
+    left: 0px;
+}
+
+
+.bluebg{
+    
+        position: absolute;
+        top: -155px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 870px;
+        background: rgba(255,255,255,0.2);
+        box-shadow: 0 5px 45px rgba(0,0,0,0.25);
+    
+
+}
+.formbx{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-right: 10px;
+    margin-right: 10px;
+    background:#fff;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 45px rgba(0,0,0,0.25);
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+    
+}
+
+.formbx .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 210px;
+}
+
+
+.bluebg .signup{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 80px;
+}
+.bluebg .signin{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 85px;
+}
+
+
+
+}
+@media (max-width:280px) and (min-width:10px) {
+
+    .container{
+  position: relative;
+
+  height:350px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bluebg{
+  
+      position: absolute;
+      top: -124px;
+      display: flex;
+     
+      align-items: center;
+      width: 100%;
+      height: 620px;
+      background: rgba(255,255,255,0.2);
+      box-shadow: 0 5px 45px rgba(0,0,0,0.25);
+  
+
+}
+.formbx.active{
+    left: 0;
+}
+.formbx{
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-right: 10px;
+  margin-right: 10px;
+  background:#fff;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 45px rgba(0,0,0,0.25);
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.formbx .form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 80px;
+}
+
+.bluebg .signup{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 70px;
+}
+.bluebg .signin{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 40px;
+}
+.formbx.active .form1{
+    left: -160px;
+}
+.formbx.active .form1 input{
+    width: 210px;
+    border: 1px solid #333;
+    margin-bottom: 15px;
+    height: 34px;
+}
+
+}

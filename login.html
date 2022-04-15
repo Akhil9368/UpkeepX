@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Akhil Soni" >
+    <meta name="keywords" content=" Login Page,Sign up,Responsive">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="tyle.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b174889818.js" crossorigin="anonymous"></script>
+    <title>Login Sign up form</title>
+    </head>
+<body>
+    <!-- Navbar -->
+  <nav class="navbar container-fluid navbar-expand-lg navbar-dark nav-color px-5 bg-danger">
+<a class="navbar-brand" href="#">UpkeepX</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+  <li class="nav-item active">
+    <a class="nav-link ul-li-a" href="index.html">Home <span class="sr-only"></span></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link ul-li-a" href="index.html">About</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link ul-li-a" href="product.html">Product Catalog</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link ul-li-a" href="index.html">Contact</a>
+  </li>
+ 
+</ul>
+</div>
+</nav>
+    <div class="container">
+        <div class="bluebg">
+            <div class="box signin">
+                <h3> Have an Account ?</h3>
+                <button class="signinbtn">Sign In</button>
+            </div>
+                <div class="box signup">
+                <h3>Don't Have an Account ?</h3>
+                <button class="signupbtn">Sign up</button>
+            </div>
+        </div>
+        <div class="formbx">
+            <div class="form">
+                <form action="">
+                    <h3>Sign In</h3>
+                    <input type="text" placeholder="Username">
+                    <input type="password" placeholder="Password">
+                    <input type="Submit" class="btn1" value="login">
+                    <a href="#" class="Forget">Forgot Password</a>
+                </form>
+            </div>
+            
+            <div class="form1">
+                <form action="">
+                    <h3>Sign Up</h3>
+                    <input type="text" placeholder="Username">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="New Password">
+                    <input type="password" placeholder="Confirm Password">
+                    <input type="Submit" class="btn2" value="Register">
+                   
+                </form>
+            </div>
+        </div>
+</div>
+<script>
+    const signinbtn =document.querySelector('.signinbtn');
+    const signupbtn =document.querySelector('.signupbtn');
+    const formbx=document.querySelector('.formbx');
+    const body=document.querySelector('body');
+    signupbtn.onclick=function(){
+        formbx.classList.add('active');
+        body.classList.add('active');
+    }
+    signinbtn.onclick=function(){
+        formbx.classList.remove('active');
+        body.classList.remove('active');
+    }
+
+</script>
+<br><br><br><br><br><br><br>  
+<footer class="py-5" id="footer" style="height: 638px;">
+    <div class="container" >
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="sec-1">
+            <h6 class="foot-head">UpkeepX</h6>
+            <p class="p-font foot-p"><em>Service Before Self</em></p>
+          </div>
+          <div class="sec-1">
+            <h6 class="foot-head">About Us</h6>
+            <p class="p-font foot-p">
+              We want to make people's life easier by  providing them all the houehold based services.
+            </p>
+          </div>
+
+          <div class="sec-1">
+            <h6 class="foot-head">Contact Us</h6>
+
+            <p>
+              <a href="#" target="_blank"><i class="fas fa-envelope icon"></i>upkeepx@example.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 foot-section-2">
+          <div>
+            <h6 class="foot-head">Information</h6>
+            <p><a href="#">Home</a></p>
+            <!-- <p><a href="#home">Donate Now</a></p> -->
+            <p><a href="#aboutUs">About Us</a></p>
+            <p><a href="#ourMission">Our Mission</a></p>
+            <p><a href="#contactUs">Contact</a></p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <h6 class="foot-head">Mail for More Info</h6>
+
+          <p>
+          <form action="mailto:saumya_singh048@rocketmail.com" method="post" enctype="text/plain">
+            <p><input type="email" placeholder="E-mail*" name="Email_ID" required /></p>
+            <button class="btn-footer">
+              SUBMIT
+            </button>
+          </form>
+          </p>
+        </div>
+      </div>
+      <div class="horizontal-rule"></div>
+      <div class="icons d-flex align-items-center justify-content-center">
+        <a href="https://twitter.com/saumyasingh38" target="_blank"><i class="fab fa-twitter icon-bottom"></i></a>
+        <a href="http://linkedin.com/in/saumya-singh-93216b179" target="_blank"><i
+            class="fab fa-linkedin icon-bottom"></i></a>
+        <a href="mailto:saumya_singh048@rocketmail.com" target="_blank"><i class="fas fa-envelope icon-bottom"></i></a>
+      </div>
+    </div>
+    <br>
+    <br>
+  </footer>
+  
+</body>
+</html>
